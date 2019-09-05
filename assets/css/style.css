@@ -5,6 +5,7 @@
 
 body {
   font-family: Lexina;
+  background: #def8ff;
 }
 
 .sign-in {
@@ -15,17 +16,19 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: white;
+  background: #def8ff;
   width: 250px;
   height: 100px;
 }
 
 .sign-in button {
-  height: 50px;
+  height: 40px;
+  border-radius: 4px;
   background: #60a6db;
-  color: white;
+  color: #def8ff;
   border: 1px solid #60a6db;
   cursor: pointer;
+  font-size: 14px;
 }
 
 .home {
@@ -40,7 +43,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: white;
+  background: #def8ff;
   width: 250px;
   height: 100px;
   color: #00a9f4;

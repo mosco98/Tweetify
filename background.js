@@ -76,7 +76,6 @@ setInterval(changeIcon, 100);
 
   chrome.runtime.onMessage.addListener(
     (request, sender, sendResponse) => {
-      console.log(request);
       if (request.connect === "yes") {
         sendResponse({message: "hi to you"});
         twitterSignin();
@@ -85,7 +84,6 @@ setInterval(changeIcon, 100);
 
     chrome.runtime.onMessage.addListener(
       (request, sender, sendResponse) => {
-        console.log(request);
         if (request.logout === "yes") {
           sendResponse({message: "hi to you"});
           twitterSignout();

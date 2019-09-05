@@ -1,0 +1,62 @@
+.tweetify {
+  width: 20px !important;
+  height: 20px !important;
+  cursor: pointer !important;
+  transition: all .35s ease-in-out !important;
+}
+.sharing {
+  visibility: hidden !important;
+  display: none !important;
+  opacity: 0 !important;
+  transition: all .35s ease-in-out !important;
+}
+
+.sharing--shown {
+  position: fixed;
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  z-index: 10000;
+  transition: all .35s ease-in-out !important;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOutDown {
+  from {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}

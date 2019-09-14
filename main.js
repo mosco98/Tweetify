@@ -1,4 +1,3 @@
-
 const content = document.createElement('img');
 content.className = 'tweetify sharing';
 var imgURL = chrome.runtime.getURL("images/twitter.png");
@@ -69,8 +68,8 @@ function showMenu() {
         return;
     }
 
-    chrome.storage.local.get("loggedIn", function(data) {
-      if(data.loggedIn !== 'yes') {
+    chrome.storage.local.get("app", function(data) {
+      if(data.app == false) {
         sharing.setAttribute( 'class', 'sharing btn' );
         sharing.style.right = 0;
         sharing.style.top  = 0;

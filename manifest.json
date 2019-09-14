@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Tweetify",
-  "description": "An extension that helps you Tweet from anywhere on your browser",
+  "description": "Tweet from anywhere on your browser!",
   "version": "1.0.0",
   "background": {
     "persistent": false,
